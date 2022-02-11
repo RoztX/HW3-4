@@ -16,6 +16,5 @@ namespace HW3_4
             Fuel = FuelType.Diesel;
             NumberOfWheels = numberOfWheels;
         }
-
     }
 }

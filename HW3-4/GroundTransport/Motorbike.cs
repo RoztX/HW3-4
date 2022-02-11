@@ -8,7 +8,6 @@ namespace HW3_4
 {
     internal class Motorbike : GroundTransport
     {
-        public string Brand { get; set; }
         public Motorbike(int numberOfPassengers, int speed, int numberOfWheels, string brand)
         {
             Type = "Motorbike";
@@ -19,10 +18,10 @@ namespace HW3_4
             Brand = brand;
         }
 
+        public string Brand { get; set; }
         public override void MySpecifications()
         {
             Console.WriteLine($"Type: {Type} Maximum number of passengers: {NumberOfPassengers} people Speed: {Speed}km/h Fuel type: {Fuel} Number of wheels: {NumberOfWheels} Brand: {Brand}");
-
         }
     }
 }

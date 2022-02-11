@@ -18,31 +18,11 @@ namespace HW3_4
                 {
                     break;
                 }
+
                 Console.WriteLine("Invalid value entered");
             }
-            return contain;
 
+            return contain;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

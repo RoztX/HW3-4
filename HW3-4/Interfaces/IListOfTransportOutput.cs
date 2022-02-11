@@ -8,6 +8,6 @@ namespace HW3_4
 {
     internal interface IListOfTransportOutput
     {
-        public void Output(Transport[] _transportList);
+        public void Output(Transport[] transports);
     }
 }

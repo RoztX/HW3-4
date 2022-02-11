@@ -8,9 +8,6 @@ namespace HW3_4
 {
     internal class Car : GroundTransport
     {
-
-        public string Brand { get; set; }
-        
         public Car(int numberOfPassengers, int speed, FuelType fuel, int numberOfWheels, string brand)
         {
             Type = "Car";
@@ -20,6 +17,8 @@ namespace HW3_4
             NumberOfWheels = numberOfWheels;
             Brand = brand;
         }
+
+        public string Brand { get; set; }
 
         public override void MySpecifications()
         {

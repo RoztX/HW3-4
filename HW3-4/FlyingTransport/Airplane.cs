@@ -8,7 +8,6 @@ namespace HW3_4
 {
     internal class Airplane : FlyingTransport
     {
-        public int WingSize { get; set; }
         public Airplane(int numberOfPassengers, int speed, int flightAltiube, int wingSize)
         {
             Type = "Airplane";
@@ -19,6 +18,7 @@ namespace HW3_4
             WingSize = wingSize;
         }
 
+        public int WingSize { get; set; }
         public override void MySpecifications()
         {
             Console.WriteLine($"Type: {Type} Maximum number of passengers: {NumberOfPassengers} people Speed:{Speed}km/h Fuel type: {Fuel} Flight Altitude: {FlightAltitude} Wingspan: {WingSize}");

@@ -12,7 +12,6 @@ namespace HW3_4
         public override void MySpecifications()
         {
             Console.WriteLine($"Type: {Type} Maximum number of passengers: {NumberOfPassengers} people Speed: {Speed}km/h Fuel type: {Fuel} Number of wheels: {NumberOfWheels}");
-
         }
     }
 }

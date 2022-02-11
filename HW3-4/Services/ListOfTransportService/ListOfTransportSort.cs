@@ -14,22 +14,21 @@ namespace HW3_4
             int option = 4.GetFromConsole();
             switch (option)
             {
-               
                 case 1:
                     SortBySpeedDescending(list);
                     break;
                 case 2:
                     SortBySpeedAscending(list);
-                    break ;
+                    break;
                 case 3:
                     SortByNumberOfPassengersDescending(list);
                     break;
                 case 4:
                     SortByNumberOfPassengersAscending(list);
                     break;
-
             }
         }
+
         private void SortByNumberOfPassengersAscending(Transport[] list)
         {
             Transport container;
@@ -46,6 +45,7 @@ namespace HW3_4
                 }
             }
         }
+
         private void SortByNumberOfPassengersDescending(Transport[] list)
         {
             Transport container;
@@ -62,12 +62,13 @@ namespace HW3_4
                 }
             }
         }
+
         private void SortBySpeedAscending(Transport[] list)
         {
             Transport container;
             for (int i = 0; i < list.Length; i++)
             {
-                for(int j = 0; j < list.Length;j++)
+                for (int j = 0; j < list.Length; j++)
                 {
                     if (list[i].Speed < list[j].Speed)
                     {
@@ -78,6 +79,7 @@ namespace HW3_4
                 }
             }
         }
+
         private void SortBySpeedDescending(Transport[] list)
         {
             Transport container;

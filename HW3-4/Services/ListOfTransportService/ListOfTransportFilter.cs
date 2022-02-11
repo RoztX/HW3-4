@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class ListOfTransportFilter :IListOfTransportFilter
+    internal class ListOfTransportFilter : IListOfTransportFilter
     {
         public Transport[] Filter(Transport[] transports)
         {
-
             Console.WriteLine("Choose the type of filtering:\n1.By type of fuel\n2.By speed\n3.By the number of passengers");
             int type = 3.GetFromConsole();
             switch (type)
@@ -19,16 +18,19 @@ namespace HW3_4
                     {
                         return FilterByFuelType(transports);
                     }
+
                 case 2:
                     {
                         return FilterBySpeed(transports);
                     }
+
                 case 3:
                     {
                         return FilterByNumberOfPassengers(transports);
                     }
             }
-            return null;
+
+            return FilterByFuelType(transports);
         }
 
         private Transport[] FilterByFuelType(Transport[] transports)
@@ -45,6 +47,7 @@ namespace HW3_4
                     arraySize++;
                 }
             }
+
             var array = new Transport[arraySize];
             arraySize = 0;
             for (int i = 0; i < transports.Length; i++)
@@ -54,8 +57,10 @@ namespace HW3_4
                     array[arraySize++] = transports[i];
                 }
             }
+
             return array;
         }
+
         private Transport[] FilterBySpeed(Transport[] transports)
         {
             Console.WriteLine("Enter your minimum speed:");
@@ -68,6 +73,7 @@ namespace HW3_4
                     arraySize++;
                 }
             }
+
             var array = new Transport[arraySize];
             arraySize = 0;
             for (int i = 0; i < transports.Length; i++)
@@ -77,6 +83,7 @@ namespace HW3_4
                     array[arraySize++] = transports[i];
                 }
             }
+
             return array;
         }
 
@@ -92,6 +99,7 @@ namespace HW3_4
                     arraySize++;
                 }
             }
+
             var array = new Transport[arraySize];
             arraySize = 0;
             for (int i = 0; i < transports.Length; i++)
@@ -101,6 +109,7 @@ namespace HW3_4
                     array[arraySize++] = transports[i];
                 }
             }
+
             return array;
         }
     }

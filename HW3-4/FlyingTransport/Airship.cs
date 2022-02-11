@@ -8,7 +8,6 @@ namespace HW3_4
 {
     internal class Airship : FlyingTransport
     {
-        public int Volume { get; set; }
         public Airship(int numberOfPassengers, int speed, int flightAltiube, int volume)
         {
             Type = "Airship";
@@ -18,6 +17,8 @@ namespace HW3_4
             FlightAltitude = flightAltiube;
             Volume = volume;
         }
+
+        public int Volume { get; set; }
 
         public override void MySpecifications()
         {

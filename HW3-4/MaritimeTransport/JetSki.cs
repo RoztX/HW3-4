@@ -8,8 +8,7 @@ namespace HW3_4
 {
     internal class JetSki : MaritimeTransport
     {
-        public bool HaveBanana { get; set; }
-        public JetSki(int speed, FuelType fuel, int crew,bool haveBanana)
+        public JetSki(int speed, FuelType fuel, int crew, bool haveBanana)
         {
             Type = "JetSki";
             NumberOfPassengers = haveBanana ? 12 : 2;
@@ -18,5 +17,6 @@ namespace HW3_4
             Crew = crew;
         }
 
+        public bool HaveBanana { get; set; }
     }
 }

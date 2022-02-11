@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal  class FlyingTransport : Transport
+    internal class FlyingTransport : Transport
     {
         public int FlightAltitude { get; set; }
 
