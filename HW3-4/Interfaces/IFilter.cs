@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal interface IListOfTransportSort
+    public interface IFilter
     {
-        public void Sort(Transport[] list);
+        public Transport[] Filter(Transport[] transports);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class ListOfTransportOutput : IListOfTransportOutput
+    public class OutputList : IOutput
     {
         public void Output(Transport[] transportList)
         {

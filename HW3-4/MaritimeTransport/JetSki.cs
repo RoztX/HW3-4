@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class JetSki : MaritimeTransport
+    public class JetSki : MaritimeTransport
     {
         public JetSki(int speed, FuelType fuel, int crew, bool haveBanana)
         {

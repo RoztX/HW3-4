@@ -12,9 +12,9 @@ namespace HW3_4
         public IContainer RegistrarDependency()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterType<ListOfTransportOutput>().As<IListOfTransportOutput>();
-            builder.RegisterType<ListOfTransportSort>().As<IListOfTransportSort>();
-            builder.RegisterType<ListOfTransportFilter>().As<IListOfTransportFilter>();
+            builder.RegisterType<OutputList>().As<IOutput>();
+            builder.RegisterType<SortList>().As<ISort>();
+            builder.RegisterType<FilterList>().As<IFilter>();
             builder.RegisterType<Starter>();
 
             var cotainer = builder.Build();

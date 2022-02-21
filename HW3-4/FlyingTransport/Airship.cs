@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class Airship : FlyingTransport
+    public class Airship : FlyingTransport
     {
         public Airship(int numberOfPassengers, int speed, int flightAltiube, int volume)
         {

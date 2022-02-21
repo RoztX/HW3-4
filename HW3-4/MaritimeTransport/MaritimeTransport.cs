@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class MaritimeTransport : Transport
+    public class MaritimeTransport : Transport
     {
         public int Crew { get; set; }
 

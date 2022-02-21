@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class ListOfTransportSort : IListOfTransportSort
+    public class SortList : ISort
     {
         public void Sort(Transport[] list)
         {
             Console.WriteLine("Select a sorting option: \n1.By Speed Highest to Lowest \n2.By Speed Lowest to Highest \n3.By Number of Passengers Highest to Lowest \n4.By Number of Passengers Lowest to Largest");
-            int option = 4.GetFromConsole();
+            int numberOfOptions = 4;
+            int option = numberOfOptions.GetFromConsole();
             switch (option)
             {
                 case 1:

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class Train : GroundTransport
+    public class Train : GroundTransport
     {
         public Train(int numberOfPassengers, int speed, int numberOfWheels)
         {

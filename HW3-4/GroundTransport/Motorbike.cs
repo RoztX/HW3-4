@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class Motorbike : GroundTransport
+    public class Motorbike : GroundTransport
     {
         public Motorbike(int numberOfPassengers, int speed, int numberOfWheels, string brand)
         {
@@ -19,6 +19,7 @@ namespace HW3_4
         }
 
         public string Brand { get; set; }
+
         public override void MySpecifications()
         {
             Console.WriteLine($"Type: {Type} Maximum number of passengers: {NumberOfPassengers} people Speed: {Speed}km/h Fuel type: {Fuel} Number of wheels: {NumberOfWheels} Brand: {Brand}");

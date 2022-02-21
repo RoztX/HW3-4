@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class ListOfTransportFilter : IListOfTransportFilter
+    public class FilterList : IFilter
     {
         public Transport[] Filter(Transport[] transports)
         {
             Console.WriteLine("Choose the type of filtering:\n1.By type of fuel\n2.By speed\n3.By the number of passengers");
-            int type = 3.GetFromConsole();
+            int numberOfOptions = 3;
+            int type = numberOfOptions.GetFromConsole();
             switch (type)
             {
                 case 1:
@@ -36,7 +37,8 @@ namespace HW3_4
         private Transport[] FilterByFuelType(Transport[] transports)
         {
             Console.WriteLine("Choose the type of fuel:\n1.Petrol\n2.Diesel\n3.AviationFuel\n4.SpaceFuel\n5.Gas");
-            int type = 5.GetFromConsole();
+            int numberOfOptions = 5;
+            int type = numberOfOptions.GetFromConsole();
             var fuelType = (FuelType)type;
             int arraySize = 0;
 
@@ -64,7 +66,8 @@ namespace HW3_4
         private Transport[] FilterBySpeed(Transport[] transports)
         {
             Console.WriteLine("Enter your minimum speed:");
-            int minSpeed = 10000.GetFromConsole();
+            int speedMax = 10000;
+            int minSpeed = speedMax.GetFromConsole();
             int arraySize = 0;
             for (int i = 0; i < transports.Length; i++)
             {
@@ -90,7 +93,8 @@ namespace HW3_4
         private Transport[] FilterByNumberOfPassengers(Transport[] transports)
         {
             Console.WriteLine("Enter the minimum number of passengers:");
-            int minNumber = 810.GetFromConsole();
+            int maxNumber = 810;
+            int minNumber = maxNumber.GetFromConsole();
             int arraySize = 0;
             for (int i = 0; i < transports.Length; i++)
             {

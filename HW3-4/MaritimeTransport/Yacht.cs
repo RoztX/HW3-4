@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class Yacht : MaritimeTransport
+    public class Yacht : MaritimeTransport
     {
         public Yacht(int numberOfPassengers, int speed, FuelType fuel, int crew)
         {

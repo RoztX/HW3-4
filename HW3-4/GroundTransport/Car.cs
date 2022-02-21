@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW3_4
 {
-    internal class Car : GroundTransport
+    public class Car : GroundTransport
     {
         public Car(int numberOfPassengers, int speed, FuelType fuel, int numberOfWheels, string brand)
         {
